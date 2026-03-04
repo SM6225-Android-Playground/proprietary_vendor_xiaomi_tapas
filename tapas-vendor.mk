@@ -1376,19 +1376,19 @@ PRODUCT_PACKAGES += \
     libq3dtools_esx \
     libCB \
     libOpenCL \
+    libStDrvInt \
     libadreno_app_profiles \
     libadreno_utils \
+    libagm \
+    libar-gsl \
+    libar-pal \
+    libfastcvopt \
     libgsl \
     libkcl \
     libkernelmanager \
     libllvm-glnext \
     libllvm-qcom \
     libllvm-qgl \
-    libStDrvInt \
-    libagm \
-    libar-gsl \
-    libar-pal \
-    libfastcvopt \
     liblmthermallistner \
     liblx-osal \
     libthermalclient \
