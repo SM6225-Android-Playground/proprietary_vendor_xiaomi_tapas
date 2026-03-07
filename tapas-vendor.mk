@@ -194,6 +194,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tapas/proprietary/vendor/etc/audio_policy_engine_default_stream_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_default_stream_volumes.xml \
     vendor/xiaomi/tapas/proprietary/vendor/etc/audio_policy_engine_product_strategies.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_product_strategies.xml \
     vendor/xiaomi/tapas/proprietary/vendor/etc/audio_policy_engine_stream_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_stream_volumes.xml \
+    vendor/xiaomi/tapas/proprietary/vendor/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
+    vendor/xiaomi/tapas/proprietary/vendor/etc/backend_conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/backend_conf.xml \
     vendor/xiaomi/tapas/proprietary/vendor/etc/batching.conf:$(TARGET_COPY_OUT_VENDOR)/etc/batching.conf \
     vendor/xiaomi/tapas/proprietary/vendor/etc/camera/104_Meet.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/104_Meet.png \
     vendor/xiaomi/tapas/proprietary/vendor/etc/camera/108_NorthernEurope.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/108_NorthernEurope.png \
@@ -301,6 +303,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tapas/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
     vendor/xiaomi/tapas/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
     vendor/xiaomi/tapas/proprietary/vendor/etc/default-permissions/com.qualcomm.qti.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/com.qualcomm.qti.cne.xml \
+    vendor/xiaomi/tapas/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     vendor/xiaomi/tapas/proprietary/vendor/etc/display/advanced_sf_offsets.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/advanced_sf_offsets.xml \
     vendor/xiaomi/tapas/proprietary/vendor/etc/displayconfig/display_id_4630946444529356673.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946444529356673.xml \
     vendor/xiaomi/tapas/proprietary/vendor/etc/displayconfig/display_id_4630946914797301377.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946914797301377.xml \
@@ -399,6 +402,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tapas/proprietary/vendor/etc/mdss_dsi_panel_m7_38_0c_0b_fhdp_video_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mdss_dsi_panel_m7_38_0c_0b_fhdp_video_mi.xml \
     vendor/xiaomi/tapas/proprietary/vendor/etc/media_khaje_v0/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_khaje_v0/video_system_specs.json \
     vendor/xiaomi/tapas/proprietary/vendor/etc/microphone_characteristics.xml:$(TARGET_COPY_OUT_VENDOR)/etc/microphone_characteristics.xml \
+    vendor/xiaomi/tapas/proprietary/vendor/etc/mixer_paths_bengal_idp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_bengal_idp.xml \
+    vendor/xiaomi/tapas/proprietary/vendor/etc/mixer_paths_bengal_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_bengal_qrd.xml \
     vendor/xiaomi/tapas/proprietary/vendor/etc/mixer_paths_scubaidp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_scubaidp.xml \
     vendor/xiaomi/tapas/proprietary/vendor/etc/mixer_paths_scubaqrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_scubaqrd.xml \
     vendor/xiaomi/tapas/proprietary/vendor/etc/perf/avcsysnodesconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/avcsysnodesconfigs.xml \
@@ -433,6 +438,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tapas/proprietary/vendor/etc/qcril_database/upgrade/other/6_version_change_property_table_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/6_version_change_property_table_qcrilnr.sql \
     vendor/xiaomi/tapas/proprietary/vendor/etc/qdcm_calib_data_m7_38_0c_0a_video_mode_fhdp_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_m7_38_0c_0a_video_mode_fhdp_dsi_panel.xml \
     vendor/xiaomi/tapas/proprietary/vendor/etc/qdcm_calib_data_m7_38_0c_0b_video_mode_fhdp_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_m7_38_0c_0b_video_mode_fhdp_dsi_panel.xml \
+    vendor/xiaomi/tapas/proprietary/vendor/etc/resourcemanager_bengal_idp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/resourcemanager_bengal_idp.xml \
+    vendor/xiaomi/tapas/proprietary/vendor/etc/resourcemanager_bengal_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/resourcemanager_bengal_qrd.xml \
     vendor/xiaomi/tapas/proprietary/vendor/etc/resourcemanager_scubaidp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/resourcemanager_scubaidp.xml \
     vendor/xiaomi/tapas/proprietary/vendor/etc/resourcemanager_scubaqrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/resourcemanager_scubaqrd.xml \
     vendor/xiaomi/tapas/proprietary/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
@@ -1459,4 +1466,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so \
-    system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so
+    system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so \
+    vendor_etc_mixer_paths_bengal_idp_india_xml \
+    vendor_etc_resourcemanager_xml
